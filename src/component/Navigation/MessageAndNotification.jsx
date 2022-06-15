@@ -1,11 +1,11 @@
 import React from "react";
 
-import MessageIcon from "../../assets/chat.svg";
-import NotificationIcon from "../../assets/notification.svg";
+import MessageIcon from "../../assets/icons/chat-icons.svg";
+import NotificationIcon from "../../assets/icons/notification-icons.svg";
 
 const MessageAndNotification = () => {
   return (
-    <section className="flex flex-row items-center gap-x-2">
+    <section className="flex flex-row items-center gap-x-3">
       <span className="cursor-pointer rounded-full bg-sub-background-1 p-2">
         <img src={MessageIcon} alt="" className="" />
       </span>

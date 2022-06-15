@@ -1,6 +1,6 @@
 import React from "react";
 
-import SearchIcon from "../../assets/akar-icons_search.svg";
+import SearchIcon from "../../assets/icons/search-icons.svg";
 
 const SearchInput = () => {
   const searchSubmitHandler = () => {};

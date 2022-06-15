@@ -1,6 +1,6 @@
 import React from "react";
 
-import Ellipse74 from "../../assets/Ellipse74.png";
+import Ellipse74 from "../../assets/profile-picture.png";
 
 const ProfilePicture = () => {
   return (

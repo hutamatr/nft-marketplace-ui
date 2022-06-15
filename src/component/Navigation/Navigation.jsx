@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-import MenuIcon from "../../assets/menu.svg";
-import CloseIcon from "../../assets/Vector.svg";
+import MenuIcon from "../../assets/icons/menu-icons.svg";
 
 import SearchInput from "./SearchInput";
 import MessageAndNotification from "./MessageAndNotification";
@@ -11,29 +10,25 @@ import MenuOverlay from "../MobileMenu/MenuOverlay";
 const Navigation = (props) => {
   const [menuShow, setMenuShow] = useState(false);
 
-  const menuShowhandler = () => {
-    !menuShow ? setMenuShow(true) : setMenuShow(false);
+  const menuShowHandler = () => {
+    setMenuShow(true);
   };
 
   const clickMenuHandler = () => {
     setMenuShow(false);
   };
 
-  const menuButton = !menuShow ? (
-    <div onClick={menuShowhandler}>
-      <img src={MenuIcon} alt="" className="cursor-pointer text-white" />
-    </div>
-  ) : (
-    <div onClick={menuShowhandler} className="z-10">
-      <img src={CloseIcon} alt="" className="cursor-pointer text-white" />
+  const menuButton = (
+    <div onClick={menuShowHandler} className="cursor-pointer">
+      <img src={MenuIcon} alt="" />
     </div>
   );
 
   return (
-    <nav className="bg-main-background p-4">
+    <nav className="sticky top-0 z-[60] bg-main-background p-4">
       <div className="flex flex-row items-center justify-between">
         {menuButton}
-        <MenuOverlay onMenuShow={menuShow} />
+        <MenuOverlay onMenuShow={menuShow} onSetMenuShow={setMenuShow} />
         <SearchInput />
         <MessageAndNotification />
         <ProfilePicture />
