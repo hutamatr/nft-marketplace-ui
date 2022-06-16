@@ -1,3 +1,10 @@
+# NFT-MARKETPLACE-UI IN PROGRESS & UNFINISHED
+
+NFT Marketplace UI is only frontend, and consumption API for content in it.
+
+UI/UX Design by: [mhdfariz](https://dribbble.com/mfariz13).
+Coded by me.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
