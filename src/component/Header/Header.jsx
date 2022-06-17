@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "../UI/card";
+import Card from "../UI/Card";
 import HeaderDesign from "../../assets/icons/header-design.svg";
 
 const Header = () => {
