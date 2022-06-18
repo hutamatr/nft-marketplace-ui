@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import axios from "axios";
 
-const useGet = () => {
+const useAxios = () => {
   const [isError, setIsError] = useState({
     error: false,
     errorMessage: "",
@@ -32,4 +32,4 @@ const useGet = () => {
   return { isError, requestHttp };
 };
 
-export default useGet;
+export default useAxios;

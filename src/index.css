@@ -8,3 +8,38 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #1b1e2a;
 }
+
+.menu-link {
+  position: relative;
+  padding: 8px 0;
+}
+
+.menu-link:before,
+.menu-link:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+}
+
+.menu-link:before {
+  left: 0;
+}
+.menu-link:after {
+  right: 0;
+  background: linear-gradient(103.85deg, #6763fd 5.47%, #b84ef1 96.28%);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu-link:hover:before {
+  background: linear-gradient(103.85deg, #6763fd 5.47%, #b84ef1 96.28%);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu-link:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}

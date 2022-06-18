@@ -1,14 +1,14 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Card from "../../UI/Card";
 import Bidder from "./Bidder";
 import HeartIcon from "../../../assets/icons/heart-icons.svg";
-import useGet from "../../../hooks/use-get";
+import useAxios from "../../../hooks/use-axios";
 
 const ExploreCard = () => {
   const [featuredArt, setFeaturedArt] = useState([]);
 
-  const { isError, requestHttp } = useGet();
+  const { isError, requestHttp } = useAxios();
 
   useEffect(() => {
     const featuredArtConf = (dataFeaturedArt) => {

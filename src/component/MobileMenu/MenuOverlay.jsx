@@ -1,5 +1,7 @@
 import React from "react";
 
+import MenuItems from "./MenuItems";
+
 import Logo from "../../assets/icons/logo.svg";
 import CloseIcon from "../../assets/icons/close-icons.svg";
 
@@ -14,7 +16,7 @@ const MenuOverlay = (props) => {
       }`}
     >
       <div className="flex flex-row items-center p-4">
-        <span onClick={closeMenuHandler}>
+        <span onClick={closeMenuHandler} className="cursor-pointer">
           <img src={CloseIcon} alt="" />
         </span>
         <div className="mx-auto flex flex-row items-center justify-center gap-x-3">
@@ -24,6 +26,8 @@ const MenuOverlay = (props) => {
           </h1>
         </div>
       </div>
+
+      <MenuItems />
     </section>
   );
 };
