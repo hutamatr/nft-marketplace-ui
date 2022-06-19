@@ -1,10 +1,7 @@
 import React from "react";
 
-import Card from "../UI/Card";
 import WalletAmount from "../Navigation/WalletAmount";
 import menuIcons from "./MenuIcons";
-
-import ethereumIcons from "../../assets/icons/ethereum-icons.svg";
 
 const MenuItems = () => {
   return (

@@ -6,13 +6,13 @@ const SearchInput = () => {
   const searchSubmitHandler = () => {};
 
   return (
-    <form onSubmit={searchSubmitHandler} className="block">
-      <div className="flex flex-row items-center gap-x-2 rounded-lg bg-sub-background-1 p-2 md:w-52 md:p-3 lg:w-[42.875rem]">
+    <form onSubmit={searchSubmitHandler} className="md:w-full">
+      <div className="flex flex-row gap-x-3 overflow-auto rounded-lg bg-sub-background-1 p-3 md:p-4">
         <img src={SearchIcon} alt="" />
         <input
           type="text"
           placeholder="Search"
-          className="w-28 bg-sub-background-1 p-1 text-slate-200 outline-none placeholder:text-white"
+          className="w-full bg-sub-background-1 text-sm text-slate-200 outline-none placeholder:text-white"
         />
       </div>
     </form>

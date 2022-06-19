@@ -5,7 +5,7 @@ import arrowIcons from "../../assets/icons/arrow-icons.svg";
 
 const ProfilePicture = () => {
   return (
-    <div className="md:flex md:flex-row md:items-center md:justify-center md:gap-x-4">
+    <div className="min-w-max sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-x-4">
       <img src={Ellipse74} alt="" />
       <span className="hidden whitespace-nowrap font-medium text-white sm:block">
         Marvin McKinney
