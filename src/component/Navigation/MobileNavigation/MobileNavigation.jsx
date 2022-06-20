@@ -1,19 +1,19 @@
 import React from "react";
 
-import MenuItems from "./MenuItems";
+import MenuItems from "../MenuItems";
 
-import Logo from "../../assets/icons/logo.svg";
-import CloseIcon from "../../assets/icons/close-icons.svg";
+import Logo from "../../../assets/icons/logo.svg";
+import CloseIcon from "../../../assets/icons/close-icons.svg";
 
-const MenuOverlay = (props) => {
+const MobileNavigation = ({ onShowMenu, onSetShowMenu, className }) => {
   const closeMenuHandler = () => {
-    props.onSetMenuShow(false);
+    onSetShowMenu(false);
   };
   return (
     <section
-      className={`absolute top-0 z-[70] h-screen w-full bg-main-background duration-500 ${
-        props.onMenuShow ? "left-0" : "-left-full"
-      }`}
+      className={`fixed top-0 z-[70] min-h-screen w-full bg-main-background duration-500 ${
+        onShowMenu ? "left-0" : "-left-full"
+      } ${className}`}
     >
       <div className="flex flex-row items-center p-4">
         <span onClick={closeMenuHandler} className="cursor-pointer">
@@ -32,4 +32,4 @@ const MenuOverlay = (props) => {
   );
 };
 
-export default MenuOverlay;
+export default MobileNavigation;
