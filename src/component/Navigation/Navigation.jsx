@@ -9,9 +9,9 @@ const Navigation = ({ onShowMenu, onSetShowMenu }) => {
       <MobileNavigation
         onShowMenu={onShowMenu}
         onSetShowMenu={onSetShowMenu}
-        className={"block lg:hidden"}
+        className={"block md:hidden"}
       />
-      <DesktopNavigation className={"hidden lg:flex"} />
+      <DesktopNavigation className={"hidden md:flex"} />
     </nav>
   );
 };
