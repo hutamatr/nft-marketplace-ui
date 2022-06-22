@@ -11,24 +11,24 @@ const Bidder = () => {
       <img
         src={Bidder1}
         alt=""
-        className="z-10 h-11 w-11 rounded-full ring-2 ring-main-background"
+        className="z-10 h-11 w-11 rounded-full ring-2 ring-main-background lg:h-8 lg:w-8"
       />
       <img
         src={Bidder2}
         alt=""
-        className="absolute left-7 z-20 h-11 w-11 rounded-full ring-2 ring-main-background"
+        className="absolute left-7 z-20 h-11 w-11 rounded-full ring-2 ring-main-background lg:h-8 lg:w-8"
       />
       <img
         src={Bidder3}
         alt=""
-        className="absolute left-14 z-30 h-11 w-11 rounded-full ring-2 ring-main-background"
+        className="absolute left-14 z-30 h-11 w-11 rounded-full ring-2 ring-main-background lg:h-8 lg:w-8"
       />
       <img
         src={Bidder4}
         alt=""
-        className="absolute left-20 z-40 h-11 w-11 rounded-full ring-2 ring-main-background"
+        className="absolute left-20 z-40 h-11 w-11 rounded-full ring-2 ring-main-background lg:h-8 lg:w-8"
       />
-      <span className="absolute left-24 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-[#6763FD] ring-2 ring-main-background">
+      <span className="absolute left-24 z-50 flex h-11 w-11 items-center justify-center rounded-full bg-[#6763FD] ring-2 ring-main-background lg:h-8 lg:w-8">
         <p className="text-xs text-white">100+</p>
       </span>
     </section>

@@ -48,7 +48,7 @@ const RecentActivity = () => {
   );
 
   return (
-    <Card className={"mb-6 rounded-xl bg-sub-background-1 p-5"}>
+    <Card className={"mb-6 rounded-2xl bg-sub-background-1 p-5"}>
       <h1 className="mb-4 text-xl font-semibold text-white">Recent Activity</h1>
       {isError.error ? (
         <p className="text-center text-lg font-semibold text-white">

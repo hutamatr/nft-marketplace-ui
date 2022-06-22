@@ -14,7 +14,10 @@ const DesktopNavigation = ({ className }) => {
       <ul className="flex w-full flex-col">
         {menuIcons.map((menu) => {
           return (
-            <li className="py-4 hover:border-l-4 hover:border-violet-900 hover:bg-slate-600">
+            <li
+              className="py-4 hover:border-l-4 hover:border-violet-900 hover:bg-slate-600"
+              key={menu.name}
+            >
               <a href="##" className="">
                 <img src={menu.icon} alt="" className="mx-auto" />
               </a>

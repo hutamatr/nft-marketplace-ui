@@ -11,7 +11,7 @@ const Navigation = ({ onShowMenuHandler }) => {
   const menuButton = (
     <div
       onClick={onShowMenuHandler}
-      className="min-w-max cursor-pointer lg:hidden"
+      className="min-w-max cursor-pointer md:hidden"
     >
       <img src={MenuIcon} alt="" />
     </div>

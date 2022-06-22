@@ -7,7 +7,7 @@ const SearchInput = () => {
 
   return (
     <form onSubmit={searchSubmitHandler} className="sm:w-full">
-      <div className="flex flex-row gap-x-3 overflow-auto rounded-lg bg-sub-background-1 p-3 md:p-4">
+      <div className="flex flex-row gap-x-3 overflow-auto rounded-lg bg-sub-background-1 p-3 md:rounded-xl md:p-4">
         <img src={SearchIcon} alt="" />
         <input
           type="text"

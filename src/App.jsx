@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="flex">
       <Navigation onShowMenu={showMenu} onSetShowMenu={setShowMenu} />
-      <div className="max-w-full lg:min-w-[90vw]">
+      <div className="w-full md:min-w-[85vw] lg:min-w-[90vw]">
         <Header onShowMenuHandler={showMenuHandler} />
         <Main />
       </div>

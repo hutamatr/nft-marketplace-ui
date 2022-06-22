@@ -9,7 +9,7 @@ const WalletAmount = (props) => {
     <section className={`${props.className}`}>
       <Card
         className={
-          "flex min-w-max flex-row items-center gap-x-4 rounded-lg bg-sub-background-1 p-4 text-sm"
+          "flex min-w-max flex-row items-center gap-x-4 rounded-lg bg-sub-background-1 p-4 text-sm md:rounded-xl"
         }
       >
         <img src={ethereumIcons} alt="" className="h-6 w-6" />

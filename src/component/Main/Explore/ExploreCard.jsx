@@ -28,7 +28,7 @@ const ExploreCard = () => {
     return (
       <Card
         className={
-          "flex min-w-max flex-col gap-y-4 rounded-xl bg-sub-background-1 p-3"
+          "flex min-w-max flex-col gap-y-4 rounded-xl bg-sub-background-1 p-3 lg:min-w-fit"
         }
         key={item.id}
       >
@@ -37,24 +37,28 @@ const ExploreCard = () => {
             src={`${item.artworksUrl}`}
             alt={item.bar}
             loading="lazy"
-            className="h-44 w-72 rounded-xl"
+            className="h-44 w-72 rounded-xl lg:w-full"
           />
-          <span className="absolute top-0 left-0 m-4 rounded-xl bg-[rgba(0,0,0,.4)] px-4 py-2 text-base font-medium text-white">
+          <span className="absolute top-0 left-0 m-1 rounded-xl bg-[rgba(0,0,0,.4)] px-4 py-2 text-base font-medium text-white lg:text-sm">
             Art
           </span>
-          <span className="absolute top-0 right-0 m-4 cursor-pointer rounded-full bg-[rgba(0,0,0,.4)] p-3 hover:bg-[rgba(0,0,0,.7)]">
-            <img src={HeartIcon} alt="" />
+          <span className="absolute top-0 right-0 m-1 cursor-pointer rounded-full bg-[rgba(0,0,0,.4)] p-3 hover:bg-[rgba(0,0,0,.7)]">
+            <img src={HeartIcon} alt="" className="lg:w-4" />
           </span>
         </div>
         <div className="flex flex-row items-center justify-between">
-          <h3 className="font-base text-lg text-white">Current Bid :</h3>
-          <span className="text-lg font-medium text-violet-700">
+          <h3 className="font-base text-lg text-white lg:text-base">
+            Current Bid :
+          </h3>
+          <span className="text-lg font-medium text-violet-700 lg:text-base">
             {item.currentBid} ETH
           </span>
         </div>
 
         <div className="flex flex-col gap-y-4 divide-y-2 divide-slate-600">
-          <h1 className="text-lg font-medium text-white">{item.bar}</h1>
+          <h1 className="text-lg font-medium text-white lg:text-base">
+            {item.bar}
+          </h1>
           <Bidder />
         </div>
       </Card>
@@ -62,9 +66,9 @@ const ExploreCard = () => {
   });
 
   return (
-    <div className="flex flex-row gap-x-4 overflow-x-auto">
+    <div className="flex flex-row gap-x-4 overflow-x-auto lg:grid lg:grid-cols-3 lg:gap-4 lg:overflow-visible">
       {isError.error ? (
-        <p className="text-center text-lg font-semibold text-white">
+        <p className="mx-auto text-center text-lg font-semibold text-white lg:col-span-3">
           {isError.errorMessage}!
         </p>
       ) : (
