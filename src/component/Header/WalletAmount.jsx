@@ -4,9 +4,9 @@ import Card from "../UI/Card";
 
 import ethereumIcons from "../../assets/icons/ethereum-icons.svg";
 
-const WalletAmount = (props) => {
+const WalletAmount = ({ className }) => {
   return (
-    <section className={`${props.className}`}>
+    <section className={`${className}`}>
       <Card
         className={
           "flex min-w-max flex-row items-center gap-x-4 rounded-lg bg-sub-background-1 p-4 text-sm md:rounded-xl"

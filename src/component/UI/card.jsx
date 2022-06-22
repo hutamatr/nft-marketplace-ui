@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = (props) => {
+const Card = ({ className, children }) => {
   return (
-    <section className={`rounded-lg shadow-sm ${props.className}`}>
-      {props.children}
+    <section className={`rounded-lg shadow-sm ${className}`}>
+      {children}
     </section>
   );
 };
